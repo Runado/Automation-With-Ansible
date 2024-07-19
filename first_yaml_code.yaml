@@ -1,0 +1,49 @@
+#Yet Another MarkeUp Language
+#Linguagem de serialização de dados.
+#Amplamente utilizado em arquivos de configuração e funcionamento bem simples.
+#YAML inclui funcionalidades que vem do Perl, C, Xml, HTML entre outras.
+#Os arquivos YAML são estruturados em formato de mapas ou lista.
+
+
+
+#Os YAML com formato de mapas é possível associar pares de chave-valor
+#Cada chave precisa ser única e qualquer ordem é aceita
+
+
+#Os YAML com formato de listas incluem valores em uma ordem especifica e podem conter qualquer quantidade de itens
+#A sequência de uma lista inicia com um traço e um espaço
+#Cada valor é separado por espaço.
+
+
+##YAML em formato de mapas 
+#Identificacao:
+#     nome: Jose
+#     sobrenome: Lucas
+#     idade: 24
+#     Sexo: Masculino
+#     Profissão: Técnico de Informática (TI)
+#     
+##YAML em formato de listas
+#Frutas:
+#     - Laranja
+#     - Maçã
+#     - Uva
+#     - Morango
+
+## YAML de LISTAS ABAIXO:
+series_preferidas:
+  - "How i met your mother"
+  - "The Office"
+  - "Stranger Things"
+  - "The Boys"
+## abaixo um exemplo de YAML de MAPAS e com uma chave retornando o valor das bandas
+
+cadastro:
+    nome: Jose
+    sobrenome: Lucas
+    Idade: 24
+    Endereço:
+      Cidade: Curitiba
+      Estado: Paraná
+      rua: xyz
+    bandas_preferidas: "{{ bandas }}"
