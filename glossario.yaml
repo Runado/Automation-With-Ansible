@@ -1,0 +1,26 @@
+#Target: Host gerenciado pelo Ansible
+
+
+#Inventário: conhecido também como “Inventory File”, representa o arquivo com a lista de targets do Ansible, nos quais serão utilizados para executar uma tarefa.
+
+
+#Ad-hoc: linha de comando do Ansible, através do binário “/usr/bin/ansible” para automatizar tarefas únicas através de um ou mais módulos gerenciados.
+
+
+#Módulos: são “conjunto de códigos” que podem ser utilizadas pela linha de comando adhoc ou em uma Playbook para prover determinada ação nos targets gerenciáveis.
+
+
+#Tasks: é a definição de uma ação aplicada em um determinado host gerenciado. Uma tarefa é executada utilizando um módulo Ansible.
+
+
+#Roles: uma “distribuição limitada” e reutilizada de um conteúdo (automação) Ansible. Em uma role temos as Tasks, Handlers, Variáveis, Templates, entre outros.
+
+
+#Playbooks: Conjunto instruções a serem executadas. Nela encontra-se as Tasks, Roles, Vars, entre outros.
+
+
+#Collections: formato de distribuição para conteúdo do Ansible, incluindo manuais, tarefas,módulos e plugins.
+
+
+#YAML: Linguagem de programação utilizada para escrever os arquivos do Ansible (Playbooks, Tasks, Inventory files, etc)
+
