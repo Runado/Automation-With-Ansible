@@ -46,4 +46,4 @@ cadastro:
       Cidade: Curitiba
       Estado: Paraná
       rua: xyz
-    series_preferidas: "{{ bandas }}"
+    series_favoritas: "{{ series_preferidas }}"
