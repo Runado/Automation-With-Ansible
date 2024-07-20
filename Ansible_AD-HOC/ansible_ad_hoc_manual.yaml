@@ -1,0 +1,36 @@
+# O Ansible possuí uma funcionalidade AD-HOC que é basicamente uma forma de interagir com os hosts por meio de uma CLI.
+## Caracteriza-se como uma maneira mais dinâmica, pois você não precisa editar nenhum arquivo de configuração bastando apenas fazer as devidas modificações.
+## na linha de comando, essa funcionalidade é útil em casos em que você precisa fazer um pequeno ajuste de forma rapida e definitiva.
+## esse utilitario segue o exemplo =" ansible [pattern] -m [modulo] -a [opções relacionadas ao modulo]".
+## Existe uma extensa documentação de como utilizar esses modulos e a funcionalidade AD HOC de forma eficaz.
+## Sempre que for necessário realizar algum comando via CLI, é interessante verificar a documentação.
+#A Seguir alguns exemplos de pequenas alterações com comandos AD-HOC:
+#   -     
+#   -     
+#   -     
+#   -     
+#   -     
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -
+#   -

@@ -1,0 +1,17 @@
+## O arquivo de configuração do Ansible é o Ansible.cfg e se encontra por padrão em \etc\ansible\ansible.cfg
+## o comando Ansible-config é util para criar, modificar e\ou consultar o arquivo ansible.cfg.
+## é importante manter o arquivo ansible.cfg seguro com permissões adequadas para evitar problemas com a segurança.
+
+####################################################################################################
+## ANSIBLE-CONFIG funciona seguindo a estrutura ANSIBLE-CONFIG {Opçoes} {Argumentos}               #
+## Principais opções:                                                                              #
+# LIST - exibe todas as configurações                                                              #
+# DUMP - Exibe todas as configurações disponíveis e cruza com as aplicadas no arquivo ansible.cfg  #
+# VIEW - Exibe as configurações dentro do arquivo ansible.cfg                                      #
+# INIT - Cria um arquivo de configuração inicial                                                   #
+####################################################################################################
+
+
+#ANSIBLE-CONFIG -t BECOME - demonstra o output de todos os  e que utilizaram o plugin Become.
+
+

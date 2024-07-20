@@ -1,0 +1,8 @@
+##Ansible Facts
+## ansible all -m setup - este comando é util para baixar todas as informações relevantes relacionadas a determinada máquina
+## O ansible facts é uma coleção de informações relevantes sobre um determinado sistema\máquina.
+# O ansible facts é utilizado pelo ansible para executar seus utilitários.
+# O Ansible Facts é a melhor maneira para coletar o máximo de informações sobre as máquinas em sua rede.
+## pode ser utilizado como base para traçar um inventário de rede.
+## O Ansible Facts possuí diversas técnicas para filtrar seus resultados, para trazer as informações que julgarem mais pertinentes.
+## O Ansible facts é utilizado como base para coletar o máximo de informações possíveis sobre uma máquina e criar um Playbook.
