@@ -1,9 +1,14 @@
 # Ansible_Codes
  Neste repositório irei explorar a ferramenta Ansible para automação de tarefas voltada a administração de sistemas operacionais e redes de computadores.
 
-#O que é o Ansible?
+# O que é o Ansible?
 Ansible® é um mecanismo open source de automação. Ele ajuda a automatizar o provisionamento, o gerenciamento de configurações, a implantação de aplicações, a orquestração e muitos outros processos de TI.
 É possível usar o Ansible para instalar software, automatizar tarefas do dia a dia, provisionar componentes de infraestrutura e rede, melhorar a segurança e a conformidade, aplicar patches em sistemas e orquestrar fluxos de trabalho complexos.
+Pode ser definida também como  uma ferramenta de software que fornece automação simples, mas poderosa, para suporte de computador de plataforma cruzada. Ela é destinada principalmente a profissionais de TI, que a usam para implantação de aplicativos, atualizações em estações de trabalho e servidores, provisionamento em nuvem, gerenciamento de configuração, orquestração intra-serviço e quase tudo que um administrador de sistemas faz semanal ou diariamente. Ansible não depende do software do agente e não tem infraestrutura de segurança adicional, portanto, é fácil de implantar.
+
+Como o Ansible envolve automação, ele requer instruções para realizar cada trabalho. Com tudo escrito em forma de script simples, é fácil fazer o controle de versão. O resultado prático disso é uma grande contribuição para o movimento da “infraestrutura como código” em TI: a ideia de que a manutenção da infraestrutura do servidor e do cliente pode e deve ser tratada da mesma forma que o desenvolvimento de software, com repositórios de auto documentação, comprovados, e soluções executáveis ​​capazes de administrar uma organização independentemente das mudanças de equipe.
+
+Embora o Ansible possa estar na vanguarda da automação, administração de sistemas e DevOps, ele também é útil para usuários comuns. O Ansible permite que você configure não apenas um computador, mas potencialmente toda uma rede de computadores de uma vez, e seu uso não requer habilidades de programação. As instruções escritas para o Ansible podem ser lidas por humanos. Quer você seja totalmente novo em computadores ou um especialista, os arquivos Ansible são fáceis de entender.
 
 
 # Módulos
