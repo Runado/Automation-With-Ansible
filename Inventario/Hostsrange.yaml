@@ -1,0 +1,6 @@
+## É possível utilizar ranges no arquivo de inventário desta forma facilitando o registro de um inventário em uma faixa de sub-rede com diversos hosts
+## Abaixo um exemplo da utilização de ranges
+[debian]
+192.168.1.[1:254] ## todos os hosts de 192.168.1.0\24
+servidor.[01:09] ## caso houver algum dns configurado é possível utilizar ranges junto com strings também.
+10.[0:255].[0:255].[0:255] # o comando será enviado para todos hosts que são partes da subrede 10.0.0.0\8

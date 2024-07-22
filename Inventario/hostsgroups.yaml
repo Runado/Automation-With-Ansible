@@ -1,0 +1,48 @@
+[all]
+## Este arquivo de inventário utiliza-se do conceito de grupos para segmentar o arquivo de inventário.
+## esta é a maneira mais eficaz para segmentar o arquivo de inventário
+## o conceito de grupos facilita a configuração dos targets centralizando o inventário em um único arquivo
+## Diminui a complexidade de multiplos arquivos de inventário.
+## Para criar os grupos utilizamos a seguinte estrutura:
+[redhat]
+ 192.168.0.1
+## um fundamento para utilização de grupos, é que todas as linhas pertencem ao grupo atual até que um novo grupo seja declarado
+## todas as linhas abaixo do grupo redhat fazem parte ao grupo redhat...
+
+[debian]
+10.0.0.2
+
+
+## outro conceito interessante é o de heredição é possível definir por meio de uma linha uma hierarquia e assim concatenar o numero de grupos
+## abaixo um exemplo da utilização de uma estrutura de heredição dentro do inventory group:
+[linux:children]
+debian
+redhat
+## máquinas que pertecem a categoria linux
+[webservers:children]
+debian
+
+#máquinas que atendem ao requisito de serem webservers
+
+
+
+### Os exemplos acima funcionam para um arquivo de inventário, para adequar este código de uma forma que funcione em um arquivo YAML.
+## é necessário fazer da seguinte forma abaixo:
+all: ## definindo o grupo
+  hosts: ## definindo os hosts que pertecem a este grupo
+    192.168.1.101 # host 
+  children: #nesta linha estou especificando as children do grupo ALL
+    debian: #Children1
+      hosts:
+      10.0.0.2
+    redhat: #Children2
+      hosts:
+      192.168.0.1
+    linux: # é possível criar outra estrutura de herança, dentro do grupo all ou qualquer outro grupo.
+      children:
+        kali:
+          hosts:
+            1.1.1.1
+        ubuntu:
+          hosts:
+            2.2.2.2

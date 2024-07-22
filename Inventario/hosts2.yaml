@@ -1,0 +1,10 @@
+all:
+  hosts:
+      192.168.56.101
+      192.168.56.102
+      192.168.56.103
+      192.168.56.104
+
+## Este inventário está segmentado, os ip's acima são targets que podem ser parametrizados também através do comando -i do ansible
+## é possível concatenar ambos os inventários repassando através do atributo -i como no exemplo
+# Ansible -i hosts2 -i hosts -m ping

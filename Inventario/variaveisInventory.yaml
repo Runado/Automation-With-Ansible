@@ -1,0 +1,37 @@
+# O Ansible permite que haja variáveis no arquivo de inventário, essas variáveis possuem uma funcionalidade já pré-definidas e a sua utilização pode ser consultada na documentação do Ansible
+## O Ansible trabalha com diversas variáveis diferentes e cada uma delas possuí sua utilidade.
+[debian]
+debianlinux ansible_host=192.168.1.101 ## esta variável ansible_host está passando os host que serão referenciados pela string debianlinux
+
+[redhat]
+redhatlinux ansible_host=192.168.1.102 
+
+[linux:children]
+debian
+redhat
+
+[debian:vars]
+http_port = 8080 # nesta estrutura padrão as variáveis possuem seu valor definido por meio de = e não de :
+[redhat:vars]
+squid_port= 3128
+
+[linux:vars] #isso seria um exemplo de variavel "Global", repare que as variaveis foram definidas ao grupo Linux que tem como children o debian e o redhat
+ansible_port=22 # dessa forma todas essa variáveis estão dentro do escopo dos grupos filhos de linux.
+ansible_ssh_user=jose
+
+## Abaixo outro exemplo com uma estrutura de YAML
+
+all:
+  children:
+    debian: 
+      hosts:
+        192.168.1.101:
+          http_port: 8080 ## as variáveis devem estar identadas e atribuidas ao escopo do hosts das quais ela pertencem
+          https_port: 443 ## Neste exemplo as duas linhas estão identadas e essas variaveis pertencem ao host 192.168.1.101
+    redhat:
+      hosts:
+        192.168.1.100:
+      ## Para definir variáveis globais dentro da estrutura do YAML, devemos abrir a chave "Vars" a nivel de HOST, essa chave se tornará global sempre que definida a nível de host
+      vars:
+        ansible_port: 22
+        ansible_ssh_user: jose

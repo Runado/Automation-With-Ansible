@@ -1,0 +1,11 @@
+all:
+  hosts:
+      192.168.101.56
+      192.168.101.57
+      192.168.101.58
+      192.168.101.59
+
+
+## Por meio do comando ansible -i eu posso segmentar os arquivos de inventário e repassar mais de 1 inventário ao ansible.
+## Por exemplo se houvesse mais de um arquivo Host eu poderia repassar através do comando ansible -i hosts -i hosts2 -m ping
+## O arquivo de host ele pode ser definido através do parametro -i conforme o exemplo a seguir ansible 
